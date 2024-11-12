@@ -1,6 +1,6 @@
 ﻿# DISEÑO Y ESTILOS
 
-#🍔 Sabroson - Market de comida en Línea 🍟
+🍔 Sabroson - Market de comida en Línea 🍟
 
 Sabroson es una página web estática diseñada para simular un market de comida en línea . Su objetivo es presentar combos de alimentos caseros de forma atractiva, organizada y funcional, destacando los productos favoritos de los clientes.🌟
 
@@ -13,7 +13,7 @@ La pagina cuenta con una estructura  que incluye
 
 ## 🚀 Características principales:
 1. **Navbar fija* con links especifico. 
-El navbar ocupa el 100% de la página y esta con una posición fija. Ya que el usuario puede scrollear y mantener las ocpciones del menu a la vista. 
+El navbar ocupa el 100% de la página y esta con una posición fija. Ya que el usuario puede scrollear y mantener las opciones del menu a la vista. 
 
 2. Iconos proximamente interactivos y funcionales.
 Carrito de compras.
@@ -34,6 +34,12 @@ El diseño solo utiliza **HTML5** y **CSS3**
   - Uso de **Flexbox** para el layout.
   Efectos hover en elementos interactivos.
 - **Font Awesome**: Iconos personalizados.
+
+## 📋 Instalación:
+1. Clona el repositorio:
+   git clone https://github.com/Valmontx/BOOTCAMP-FRONTEND-REACT-NTT.git
+2. Ingresa a la carpeta
+   cd BOOTCAMP-FRONTEND-REACT-NTT 
 
 
 
