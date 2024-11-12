@@ -1,12 +1,12 @@
 ﻿# DISEÑO Y ESTILOS
 
-🍔 Sabroson - Market de comida en Línea 🍟
+#🍔 Sabroson - Market de comida en Línea 🍟
 
 Sabroson es una página web estática diseñada para simular un market de comida en línea . Su objetivo es presentar combos de alimentos caseros de forma atractiva, organizada y funcional, destacando los productos favoritos de los clientes.🌟
----
+
 
 ## 📸 Vista previa del proyecto:
-![Vista previa de Sabroson](src/assets/screens.png)
+![Vista previa de Sabroson](src/assets/screenss.png)
 La pagina cuenta con una estructura  que incluye
 
 ---
