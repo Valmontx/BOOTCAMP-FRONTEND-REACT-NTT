@@ -13,6 +13,7 @@ html {
 
 
 :root {
+    /* usemos nombres más generales los terminos primario secundario son para la guía de estilos de un diseño pero a nivel de css nosotros tenemos el control por lo que podemos ponerle un nombre como black800 donde 800 haga referencia a la intensidad, y seguir con esa misma idea */
     --blackPrimary: #282727;
     --redPrimary: rgb(200, 16, 46);
     --whitePrimary: rgb(247, 247, 247);
@@ -23,6 +24,7 @@ html {
 
 .header-title {
     font-family: "Agbalumo", system-ui;
+    /* si ya se tiene un root de variables hay que reutilizar esa variables */
     color: rgb(247, 247, 247);
     font-weight: bold;
     font-size: 2em;
@@ -37,6 +39,7 @@ html {
 
 .fa-shopping-cart,
 .fa-user {
+    /* si ya se tiene un root de variables hay que reutilizar esa variables */
     color: rgb(246, 246, 246);
 }
 
@@ -46,6 +49,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    /* si ya se tiene un root de variables hay que reutilizar esa variables */
     background: linear-gradient(to right, rgb(200, 16, 46), rgb(165, 10, 35));
     position: fixed;
     top: 0;
@@ -141,6 +145,7 @@ li a {
     gap: 30px;
     padding: 50px;
     background-color: #f5ebdc;
+    /* no dejemos código que no usamos */
     /* background: linear-gradient( to bottom, rgb(244, 242, 213), rgb(244, 244, 129), rgb(234, 234, 127)); */
 
 }
@@ -180,6 +185,7 @@ li a {
     text-align: justify;
 }
 
+/* mantengamos un solo idioma no mezclemos más de 1, y de preferencia que sea inglés*/
 .precio {
     margin-top: 10px;
     font-weight: bold;
