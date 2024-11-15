@@ -8,14 +8,14 @@ html {
     height: 100vh;
     background-color: var(--backgroundPrincipal);
     font-family: "Sharp Sans Display No1", "Open Sans", Helvetica, Arial, sans-serif;
-
+    overflow-x: hidden;
 }
 
 
 :root {
     --blackPrimary: #282727;
-    --redPrimary: rgb(200, 16, 46);
-    --whitePrimary: rgb(247, 247, 247);
+    --redHeader: rgb(200, 16, 46);
+    --whitebold: rgb(247, 247, 247);
     --backgroundPrincipal: #f5ebdc;
 }
 
@@ -23,7 +23,7 @@ html {
 
 .header-title {
     font-family: "Agbalumo", system-ui;
-    color: rgb(247, 247, 247);
+    color: var(--whitebold);
     font-weight: bold;
     font-size: 2em;
     margin-left: 15px;
@@ -37,7 +37,7 @@ html {
 
 .fa-shopping-cart,
 .fa-user {
-    color: rgb(246, 246, 246);
+    color: var(--whitebold);
 }
 
 
@@ -46,7 +46,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: linear-gradient(to right, rgb(200, 16, 46), rgb(165, 10, 35));
+    background: var(--redHeader);
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ ul {
 
 li a {
     text-decoration: none;
-    color: rgb(247, 247, 247);
+    color: var(--whitebold);
     font-weight: 600;
     font-size: 13px;
     cursor: pointer;
@@ -77,10 +77,11 @@ li a {
     justify-content: flex-start;
     align-items: center;
     margin-top: 100px;
-    margin-left: 110px;
-    
-    
-   
+    padding: 25px;
+
+
+
+
 }
 
 .img-banner {
@@ -88,15 +89,43 @@ li a {
     margin-left: 90%;
 }
 
+.container-search {
+    display: flex;
+    align-items: center;
+}
+
 .search-input {
-    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     width: 300px;
-    height: 28px;
+    height: 40px;
     border: 1px solid #b3b2b261;
-    text-indent: 10px;
+    text-indent: 5px;
     margin: 20px;
     font-size: 11px;
+    margin-right: 0;
 
+}
+
+.button-icon {
+    border: none;
+    cursor: pointer;
+
+}
+
+.fa-magnifying-glass {
+    color: var(--whitebold);
+    border-radius: 3px;
+    width: 38px;
+    height: 39.7px;
+    background-color: var(--redHeader);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: 1px  solid #b3b2b261;
+    padding-top: 12px;
+    
 }
 
 .select-option {
@@ -105,11 +134,14 @@ li a {
     -moz-appearance: none;
     background-color: --whitePrimary;
     border: 1px solid #b3b2b261;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 8px;
     font-size: 10px;
     color: #979595;
     outline: none;
+    margin: 20px;
+    height: 40px;
+    cursor: pointer;
 }
 
 
@@ -122,11 +154,12 @@ li a {
 }
 
 .section-subtittle {
-    
-    font-size: 1.5em;
-    margin-left: 140px;
-    
 
+    font-size: 1.4em;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -136,29 +169,28 @@ li a {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 5px;
     align-items: center;
-    gap: 30px;
-    padding: 50px;
-    background-color: #f5ebdc;
-    /* background: linear-gradient( to bottom, rgb(244, 242, 213), rgb(244, 244, 129), rgb(234, 234, 127)); */
+    padding: 25px;
+    background-color: var(--backgroundPrincipal);
 
 }
 
 .card {
-    width: 220px;
-    height: 300px auto;
+    width: 280px;
+    height: 400px;
     background-color: #fefbf2;
-    align-content: center;
     text-align: center;
     border-radius: 15px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     box-shadow: 2px 2px 1px 1px #aaa9a931;
+    margin-bottom: 30px;
 }
 
 .fa-heart {
-    margin-left: 180px;
+    margin-left: 250px;
     cursor: pointer;
 }
 
@@ -180,28 +212,28 @@ li a {
     text-align: justify;
 }
 
-.precio {
+.price {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.precio span {
-    color: rgb(200, 16, 46);
+.price span {
+    color: var(--redHeader);
     font-size: 15px;
 }
 
 .container-card-button {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
-    margin-bottom: 10px;
+    margin-top: 28px;
+
 
 
 }
 
 .card-img {
-    width: 216px;
-    height: 150px;
+    width: 100%;
+    height: 200px;
     background-size: cover;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
@@ -213,7 +245,7 @@ li a {
     border-radius: 5px;
     width: 100px;
     height: 25px;
-    color: #f2f2e8;
+    color: var(--whitebold);
     padding: 10px;
     align-content: center;
     font-size: 10px;
@@ -223,10 +255,10 @@ li a {
     cursor: pointer;
 }
 
-.ver-mas {
-    width: 150px;
+.see-more {
+    width: 280px;
     height: 40px;
-    background-color: rgb(200, 16, 46);
+    background-color: var(--redHeader);
     color: rgb(247, 247, 247);
     border-radius: 5px;
     text-align: center;
@@ -247,7 +279,7 @@ footer {
     width: 100%;
     height: 30vh;
     background-color: rgb(34, 35, 35);
-    color: #f2f2e8;
+    color: var(--whitebold);
 }
 
 .container-icons {
@@ -261,7 +293,7 @@ footer {
 
 }
 
-.footer-text-1 {
+.footer-text-first {
     font-size: 10px;
     padding-left: 2px;
     margin-bottom: 10px;
@@ -273,7 +305,7 @@ footer {
     margin-left: 0px;
 }
 
-.footer-text-2 {
+.footer-text-second {
     font-size: 10px;
     margin-top: -20px;
     text-align: center;
@@ -294,9 +326,11 @@ footer {
 }
 
 
+
+
 /* Media Querys*/
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 720px) {
 
     .section-container-card {
         display: flex;
@@ -315,7 +349,7 @@ footer {
     }
 
     .search-input {
-        width: 120px;
+        width: 215px;
     }
 
     .background-banner {
@@ -323,6 +357,23 @@ footer {
     }
 
     .section-search-option {
-        margin-top: 70px;
+        margin-top: 80px;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 400px;
+        height: 420px;
+    }
+    .card-img {
+        width: 100%;
+        height: 220px;
+    }
+    .fa-heart{
+       margin-left: 360px;
+    }
+    .see-more{
+        width: 380px;
     }
 }
