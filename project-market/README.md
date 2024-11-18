@@ -2,7 +2,8 @@
 
 ## YOUMARKET♡ 💄🛒
 
-Se realizo una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea, lo cual podrás realizar tus compras fácilmente , podrás filtrar por categorias o por producto en especifico. Además puedes agregar como favorito el producto antes de agregarlo al carrito.  
+Se realizo una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea
+lo cual podrás realizar tus compras fácilmente,podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
 
 
 ## 📸 Vista previa del proyecto:
