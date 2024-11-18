@@ -6,8 +6,8 @@ Se realizo una iteración  completamente diferente del  market anterior. Esta ve
 
 
 ## 📸 Vista previa del proyecto:
-![Vista previa de youMarket ](src/assets/youMarket.png)
-----
+![Vista previa de youMarket ](/project-market/src/assets/youMarket.png)
+
 La pagina cuenta con una estructura  que incluye:
 
 
@@ -40,8 +40,9 @@ La pagina cuenta con una estructura  que incluye:
 |**Font Awesome**| Iconos personalizados.              |
 |**Google Fonts**| Fuentes personalizadas.             |
 
-
+--- 
 ## 📁 Esctructura  de carpetas y archivos 
+
 
 BOOTCAMP-FRONTEND-REACT-NTT/
 │
@@ -57,6 +58,9 @@ BOOTCAMP-FRONTEND-REACT-NTT/
 │   └── vite.config.js
 
 
+
+
+---
 ## 🌵 Branches
 
 - `feature/diseño-y-estilos`
