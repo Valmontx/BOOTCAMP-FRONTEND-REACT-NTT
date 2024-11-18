@@ -1,4 +1,4 @@
-# Theme JavaScript
+## JavaScript
 
 ## YOUMARKET♡ 💄🛒
 
@@ -6,27 +6,27 @@ Se realizo una iteración  completamente diferente del  market anterior. Esta ve
 
 
 ## 📸 Vista previa del proyecto:
-![Vista previa de youMarket ](/project-market/src/assets/youMarket.png)
+![Vista previa de youMarket ](./src/assets/youMarket.png)
 
 La pagina cuenta con una estructura  que incluye:
 
 
 ## 🔰 Características principales:
 
-- **Carrito de compras:** Incrementa dinámicamente el contador de productos al agregar productos al carrito.
-- **Favoritos:** Permite marcar productos como favoritos. *Lógica pendiente*
-- **Perfil de usuario:** Función en desarrollo.
+- **Carrito de compras:**  Incrementa dinámicamente el contador de productos al agregar productos al carrito.
+- **Favoritos:**  Permite marcar productos como favoritos. `Lógica pendiente`
+- **Perfil de usuario:**  Función en desarrollo.
 - **Buscador:** 
-    - Permite realizar una búsqueda de productos a través de la caja de busqueda (`<input>` con id `search-products`).
-    - La búsqueda se realiza en las propiedades `title`, `description`, `price`, y `rating` de los productos.
-    - El filtro de búsqueda no es sensible a mayúsculas/minúsculas.
+ - Permite realizar una búsqueda de productos a través de la caja de busqueda (`<input>` con id `search-products`).
+ - La búsqueda se realiza en las propiedades `title`, `description`, `price`, y `rating` de los productos.
+ - El filtro de búsqueda no es sensible a mayúsculas/minúsculas.
 - **Desplegable de categorías:** 
-    - Se añadió un menú desplegable (<select>) con las categorías que escogí de la API. 
-    - Creé una función que se ejecuta en el evento change del <select>, filtrando los productos con base en la categoría seleccionada.
+ - Se añadió un menú desplegable `<select>` con las categorías que escogí de la API. 
+ - Creé una función que se ejecuta en el evento change del `<select>`, filtrando los productos con base en la categoría seleccionada.
 - **Diseño responsive:**  
-    -  Compatible con dispositivos móviles, tablets y desktops.
-    -  Usé Media Queries en CSS para personalizar estilos en distintos breakpoints.
-    -  Utilicé Flexbox para una estructura flexible y adaptable de cada elemento.
+ -  Compatible con dispositivos móviles, tablets y desktops.
+ -  Usé Media Queries en CSS para personalizar estilos en distintos breakpoints.
+ -  Utilicé Flexbox para una estructura flexible y adaptable de cada elemento.
 
 
 ## 🔧 Herramientas utilizadas 
@@ -40,27 +40,22 @@ La pagina cuenta con una estructura  que incluye:
 |**Font Awesome**| Iconos personalizados.              |
 |**Google Fonts**| Fuentes personalizadas.             |
 
---- 
+
 ## 📁 Esctructura  de carpetas y archivos 
 
-
-BOOTCAMP-FRONTEND-REACT-NTT/
-│
-├── project-market/               
-│   ├── src/ 
-│   |   ├── assets/            
-│   |   ├── index.js                 
-│   │   └── filter.js
-│   │   └── shopping-cart.js
-│   │   └── style.css
-│   ├── index.html  
-│   ├── package.json      
-│   └── vite.config.js
+├─project-market/               
+│ ├─src/ 
+│ | ├──assets/            
+│ | ├──index.js                 
+│ │ └──filter.js
+│ │ └──shopping-cart.js
+│ │ └──style.css
+│ ├──index.html  
+│ ├──package.json      
+│ └──vite.config.js
 
 
 
-
----
 ## 🌵 Branches
 
 - `feature/diseño-y-estilos`
@@ -83,7 +78,7 @@ BOOTCAMP-FRONTEND-REACT-NTT/
    `cd project/market `
 3. Inicia el servidor 
    `npm run dev` 
-   * Rama en la que se está trabajando
+4. Rama en la que se está trabajando
    `git checkout feature/javaScript `  
 
 
