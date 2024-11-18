@@ -2,7 +2,7 @@
 
 ## YOUMARKET♡ 💄🛒
 
-Se realizo una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ que es una tienda en linea, lo cual podrás realizar tus compras fácilmente , podrás filtrar por categorias o por prodcuto en especifico. Además puedes agregar como favorito el producto antes de agregarlo al carrito.  
+Se realizo una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea, lo cual podrás realizar tus compras fácilmente , podrás filtrar por categorias o por producto en especifico. Además puedes agregar como favorito el producto antes de agregarlo al carrito.  
 
 
 ## 📸 Vista previa del proyecto:
@@ -14,7 +14,7 @@ La pagina cuenta con una estructura  que incluye:
 ## 🔰 Características principales:
 
 - **Carrito de compras:** Incrementa dinámicamente el contador de productos al agregar productos al carrito.
-- **Favoritos:** Permite marcar productos como favoritos.*Lógica pendiente*
+- **Favoritos:** Permite marcar productos como favoritos. *Lógica pendiente*
 - **Perfil de usuario:** Función en desarrollo.
 - **Buscador:** 
     - Permite realizar una búsqueda de productos a través de la caja de busqueda (`<input>` con id `search-products`).
