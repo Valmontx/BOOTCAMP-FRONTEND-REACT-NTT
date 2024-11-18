@@ -6,7 +6,7 @@ Se realizo una iteración  completamente diferente del  market anterior. Esta ve
 
 
 ## 📸 Vista previa del proyecto:
-![Vista previa de youMarket.png ](project-market\src\assets\youMarket.png)
+![Vista previa de youMarket.png ](\src\assets\youMarket.png)
 
 La pagina cuenta con una estructura  que incluye:
 
@@ -41,6 +41,8 @@ La pagina cuenta con una estructura  que incluye:
 |**Google Fonts**| Fuentes personalizadas.             |
 
 
+
+
 ## 📁 Esctructura  de carpetas y archivos 
 
 BOOTCAMP-FRONTEND-REACT-NTT/
@@ -54,6 +56,15 @@ BOOTCAMP-FRONTEND-REACT-NTT/
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
+
+
+
+
+
+
+
+
+
 
 
 ## 🌵 Branches
