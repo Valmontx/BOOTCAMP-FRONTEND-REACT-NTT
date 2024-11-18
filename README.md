@@ -2,11 +2,11 @@
 
 ## YOUMARKET♡ 💄🛒
 
-Se realizo una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡, una tienda en linea, lo cual podrás realizar tus compras fácilmente, podrás filtrar por categorias o por producto en especifico. Además puedes agregar como favorito antes de añadirlo al carrito.  
+Se realizó una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡, una tienda en linea, lo cual podrás realizar tus compras fácilmente, podrás filtrar por categorias o por producto en especifico. Además puedes agregar como favorito antes de añadirlo al carrito.  
 
 
 ## 📸 Vista previa del proyecto:
-![Vista previa de youMarket.png ](\src\assets\youMarket.png)
+![Vista previa de youMarket ](./src/assets/youMarket.png)
 
 La pagina cuenta con una estructura  que incluye:
 
@@ -14,7 +14,7 @@ La pagina cuenta con una estructura  que incluye:
 ## 🔰 Características principales:
 
 - **Carrito de compras:** Incrementa dinámicamente el contador de productos al agregar productos al carrito.
-- **Favoritos:** Permite marcar productos como favoritos.*Lógica pendiente*
+- **Favoritos:** Permite marcar productos como favoritos. *Lógica pendiente*
 - **Perfil de usuario:** Función en desarrollo.
 - **Buscador:** 
     - Permite realizar una búsqueda de productos a través de la caja de busqueda (`<input>` con id `search-products`).
@@ -46,25 +46,16 @@ La pagina cuenta con una estructura  que incluye:
 ## 📁 Esctructura  de carpetas y archivos 
 
 BOOTCAMP-FRONTEND-REACT-NTT/
-├── project-market/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── index.js
-│   │   ├── filter.js
-│   │   ├── shopping-cart.js
-│   │   ├── style.css
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-
-
-
-
-
-
-
-
-
+├─project-market/               
+│  ├─src/ 
+│   ├── assets/            
+│   ├── index.js                 
+│   └── filter.js
+│   └── shopping-cart.js
+│   └── style.css
+│ ├── index.html  
+│ ├── package.json      
+│ └── vite.config.js
 
 
 ## 🌵 Branches
@@ -89,7 +80,7 @@ BOOTCAMP-FRONTEND-REACT-NTT/
    `cd project/market `
 3. Inicia el servidor 
    `npm run dev` 
-   * Rama en la que se está trabajando
+4. Rama en la que se está trabajando
    `git checkout feature/javaScript `  
 
 
