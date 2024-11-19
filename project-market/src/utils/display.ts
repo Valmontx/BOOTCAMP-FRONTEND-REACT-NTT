@@ -1,36 +1,19 @@
-//Consuming the API and Filtering by Categories
+import {uploadProducts} from "../services/api"
+import { incrementCartCounter} from "../pages/shopping-cart";
+import { Product , state } from "../index";
 
-let allProducts = [];
-let visibleProducts = 4
 
-async function uploadProducts() {
-    try {
-        const response = await fetch('https://dummyjson.com/products');
-        const data = await response.json();
-
-        allProducts = data.products.filter(product =>
-            product.category === "beauty" ||
-            product.category === "fragrances" ||
-            product.category ===  "furniture"
-        );
-
-        displayProducts(allProducts.slice(0, visibleProducts));
-        return data.products;
-    } catch (error) {
-        console.error("Error fetching products:", error);
-    }
-}
 
 //Painting to the API
 
-function displayProducts(products) {
+export function displayProducts(products: Product[]): void {
 
     const container = document.getElementById("products-container");
+   if(!container) return;
     container.innerHTML = '';
 
     products.forEach(product => {
-        console.log(products);
-       
+        
         const card = document.createElement('div');
         card.classList.add('card');
 
@@ -62,7 +45,7 @@ function displayProducts(products) {
 
         const rating = document.createElement('p');
         rating.classList.add('rating');
-        rating.textContent = product.rating;
+        rating.textContent = String(product.rating);
         
         const startIcon = document.createElement('i');
         startIcon.classList.add('fa-solid', 'fa-star');
@@ -78,12 +61,10 @@ function displayProducts(products) {
         button.textContent = 'Add to bag ';
 
         button.addEventListener('click', () =>{
-            cartCounter++
             incrementCartCounter()
         })
 
-        containerButton.appendChild(button);
-        
+        containerButton.appendChild(button); 
 
         card.appendChild(containerImg);
         card.appendChild(title);
@@ -98,16 +79,19 @@ function displayProducts(products) {
 }
 // Button of all products
 
-function loadAllProducts() {
-    visibleProducts = allProducts.length;
-    displayProducts(allProducts);
+export function loadAllProducts() {
+    
+    state.visibleProducts = state.allProducts.length;
+    displayProducts(state.allProducts);
 
-    const loadMoreButton = document.getElementById("load-more-button");
-    loadMoreButton.textContent = "all products are loaded";
-    loadMoreButton.disabled = true; 
+    const loadMoreButton = document.getElementById("load-more-button") as HTMLButtonElement;
+    if(loadMoreButton){
+        loadMoreButton.textContent = "all products are loaded";
+        loadMoreButton.disabled = true; 
+    }  
 }
 
-document.getElementById("load-more-button").addEventListener("click", loadAllProducts);
+document.getElementById("load-more-button")?.addEventListener("click", loadAllProducts) 
 
 
 
@@ -115,5 +99,5 @@ document.getElementById("load-more-button").addEventListener("click", loadAllPro
 uploadProducts();
 
 window.onload = () => {
-    uploadProducts();
+uploadProducts();
 }
