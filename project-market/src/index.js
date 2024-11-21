@@ -3,11 +3,14 @@
 let allProducts = [];
 let visibleProducts = 4
 
+// separemos la logica de consumo de servicios, mapper, e insercion en diferentes funciones
 async function uploadProducts() {
     try {
         const response = await fetch('https://dummyjson.com/products');
         const data = await response.json();
 
+
+        // no usemos palabras m'agicas podemos guardar esto en un objeto para evitar escribirlo manualmente
         allProducts = data.products.filter(product =>
             product.category === "beauty" ||
             product.category === "fragrances" ||
@@ -29,6 +32,7 @@ function displayProducts(products) {
     container.innerHTML = '';
 
     products.forEach(product => {
+        // no console.log
         console.log(products);
        
         const card = document.createElement('div');

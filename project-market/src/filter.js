@@ -24,6 +24,7 @@ function filterByCategory(selectedCategory) {
 // Filter - the search
 
 function searchProducts(search) {
+    // tal vez [product.title, product.description, String(product.price), String(product.rating)].includes(search.toLowerCase())
     const filteredProducts = allProducts.filter(product => 
             product.title.toLowerCase().includes(search.toLowerCase()) || 
             product.description.toLowerCase().includes(search.toLowerCase()) || 
