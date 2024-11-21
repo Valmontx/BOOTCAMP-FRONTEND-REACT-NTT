@@ -2,6 +2,7 @@ import { displayProducts } from "../utils/display";
 import { Product , state } from "../index";
 
 
+// no encontr'e donde se usa este objeto
 // Mapper for section of filter categories 
 export const categoryMapper: { [key: string]: string } = {
     fragrances: "fragrances",
@@ -23,12 +24,9 @@ export function filterByCategory(selectedCategory: string): void {
     if (selectedCategory === "all") {
         filteredProducts = allProducts;
     } else {
-        filteredProducts = allProducts.filter(product => {
-            console.log("Product category:", product.category);
-            return product.category === selectedCategory;
-
-        });
+        filteredProducts = allProducts.filter(({ category }) => category === selectedCategory);
     }
+    // no console
     console.log("Filtered products:", filteredProducts);
     displayProducts(filteredProducts.slice(0, visibleProducts));
 }
