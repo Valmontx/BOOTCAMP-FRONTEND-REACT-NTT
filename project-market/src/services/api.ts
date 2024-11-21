@@ -6,6 +6,7 @@ import { displayProducts,  state, Product } from "../index";
  export async function uploadProducts(): Promise<Product[]> {
     try {
         const response = await fetch('https://dummyjson.com/products');
+        // podr'ias crearle un tipo a data para que no sea necesario tiparlo forzadamente en el callback de products
         const data = await response.json();
         state.allProducts = data.products.filter((product: Product) =>
             product.category === "beauty" ||
