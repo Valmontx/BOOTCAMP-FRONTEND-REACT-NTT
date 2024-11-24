@@ -44,9 +44,9 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 - `Favoritos:` Permite marcar productos como favoritos. `Lógica pendiente`
 - `Perfil de usuario:` Función en desarrollo.
 - `Buscador: `
-  1.Permite realizar una búsqueda de productos a través de la caja de busqueda.
-  2.La búsqueda se realiza en las propiedades `title`, `description`, `price`, y `rating` de los productos.
-  3.El filtro de búsqueda no es sensible a mayúsculas/minúsculas.
+  1. Permite realizar una búsqueda de productos a través de la caja de busqueda.
+  2. La búsqueda se realiza en las propiedades `title`, `description`, `price`, y `rating` de los productos.
+  3. El filtro de búsqueda no es sensible a mayúsculas/minúsculas.
 - `Desplegable de categorías: `Se añadió un menú desplegable `<select>` con las categorías que escogí de la API. 
 - `Diseño responsive: `
   1. Compatible con dispositivos móviles, tablets y desktops.
@@ -71,45 +71,45 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 
 ## 📁 Esctructura  de carpetas y archivos 
 
--`project-market/`
-  -`public/`
-   -`src/`
-     -`assets/`
-     -`components/`
-      -`card/`
-         -`Productcard.tsx`
-         -`ProductList.tsx`
-      -`filters/`
-         -`CategoryFilter.tsx`
-         -`SearchFilter.tsx`
-      -`footer/`
-         -`Footer.tsx`
-         -`navbar/`
-         -`Navbar.tsx`
-      -`context/`
-          -`reducer.ts/`
-      -`domain/`
-         -`Product.ts`
-      -`hooks/`
-        -`useProduct.ts`
-      - `Pages/` 
-        -`Cart/` 
-         -`Cart.tsx` 
-        -`Home/` 
-         -`Home.tsx` 
-      -`services/`
-        -`api.ts` 
-      -`state/`
-        -`Categories.ts` 
-        -`ProductState.ts` 
-      -`utils/`
-        -`filterCategory.ts`
-      -`App.tsx`
-      -`main.tsx`
-      -`module-routes.ts`
-      -`style.css`
-   - `index.html`
-   - `package.json`
+- `project-market/`
+  - `public/`
+  - `src/`
+    - `assets/`
+    - `components/`
+      - `card/`
+        - `ProductCard.tsx`
+        - `ProductList.tsx`
+      - `filters/`
+        - `CategoryFilter.tsx`
+        - `SearchFilter.tsx`
+      - `footer/`
+        - `Footer.tsx`
+      - `navbar/`
+        - `Navbar.tsx`
+      - `context/`
+        - `reducer.ts`
+      - `domain/`
+        - `Product.ts`
+      - `hooks/`
+        - `useProduct.ts`
+      - `Pages/`
+        - `Cart/`
+          - `Cart.tsx`
+        - `Home/`
+          - `Home.tsx`
+      - `services/`
+        - `api.ts`
+      - `state/`
+        - `Categories.ts`
+        - `ProductState.ts`
+      - `utils/`
+        - `filterCategory.ts`
+      - `App.tsx`
+      - `main.tsx`
+      - `module-routes.ts`
+      - `style.css`
+  - `index.html`
+  - `package.json`
 
 
 
