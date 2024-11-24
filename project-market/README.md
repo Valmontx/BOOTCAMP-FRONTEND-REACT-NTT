@@ -5,10 +5,11 @@
 Se realizó una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea
 lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
 
-
-## 📸 Vista previa del proyecto:
+## 📸 Vista previa del proyecto desktop:
 ![Vista previa de youMarket ](./src/assets/youMarket.png)
 
+## 📸 Vista previa del proyecto mobile:
+![Vista previa de youMarket ](./src/assets/mobile.png)
 
 ## 🛠️ Migración a React con typescript
 
@@ -17,7 +18,7 @@ Este proyecto ha sido migrado  de `Javascript` a ` React con typescript` se ha c
 
 Las principales características de React que se han integrado incluyen:
 
-- **Componentes**: Creados especificamente para cada sección, como el header, navbar, footer..entre otros, lo cual solo contienen eventos y jxs. En caso se requiera agregar componentes "atomos" o "moleculas" *(siguiendo los sistemas de diseño)* se  podrá añadir facilmente ya que cada uno tiene su propia carpeta.
+- **Componentes**: Creados especificamente para cada sección, como el header, navbar, footer..entre otros, lo cual solo contienen eventos y jxs. En caso se requiera agregar componentes "atomos" o "moleculas" *(siguiendo el sistema de diseño)* se  podrá añadir facilmente ya que cada uno tiene su propia carpeta.
 - **Hooks**: Se utilizan hooks como useState y useEffect para manejar el estado y los efectos secundarios de la aplicación de forma más eficiente.
 - **Props**: Uso de props en componentes, como `productCard.tsx` que recibe datos de productos, como el *title, description, price, rating etc*.
 - **React-router-dom**: Se instalo router-dom para la navegacion de páginas, para este proyecto es necesario navegar hasta la vista del carrito para visualizar el resume de tus compras. 
@@ -115,11 +116,13 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 
 
 ## 🌵 Ramas del proyecto
-
-   `feature/diseño-y-estilos `
-   `feature/javaScript `
-   `feature/typescript ` 
-   `feature/react-fundamentos`
+  
+  ```
+   feature/diseño-y-estilos 
+   feature/javaScript 
+   feature/typescript  
+   feature/react-fundamentos
+  ```
 
 
 ## Tareas Completadas
