@@ -9,7 +9,7 @@ lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito,
 ![Vista previa de youMarket ](./src/assets/youMarket.png)
 
 ## 📸 Vista previa del proyecto mobile:
-![Vista previa de youMarket ](./src/assets/mobile.png)
+<img src="./src/assets/mobile.png" alt="Vista previa de youMarket" width="300">
 
 ## 🛠️ Migración a React con typescript
 
