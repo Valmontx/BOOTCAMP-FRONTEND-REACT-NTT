@@ -13,7 +13,7 @@ lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito,
 
 ## 🛠️ Migración a React con typescript
 
-Este proyecto ha sido migrado  de `Javascript` a ` React con typescript` se ha componetizado el código y separado la lógica de negocio, se ha creado cada carpeta y archivo necesario para separar responsabilidades ademas de volverlo reutilizable y practico al momento de realizar los test.
+Este proyecto ha sido migrado  de `Javascript vanilla` a ` React con typescript` se ha componetizado el código y separado la lógica de negocio, se ha creado cada carpeta y archivo necesario para separar responsabilidades ademas de volverlo reutilizable y practico al momento de realizar los test.
 
 
 Las principales características de React que se han integrado incluyen:
@@ -134,9 +134,9 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 
 
 ## 📋 Instalación 
-
-1. Clona el repositorio:
   ```
+1. Clona el repositorio:
+  
   git clone https://github.com/Valmontx/BOOTCAMP-FRONTEND-REACT-NTT.git
 
 2. Ingresa a la carpeta
