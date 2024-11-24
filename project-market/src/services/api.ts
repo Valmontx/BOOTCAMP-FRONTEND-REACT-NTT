@@ -1,22 +1,31 @@
-import { displayProducts,  state, Product } from "../index";
+
+import { Product } from "../domain/product";
+import { ProductApiResponse } from "../domain/product";
+import { filterProductsByCategory } from "../utils/filterCategory";
 
 
-//Consuming the API and Filtering by Categories
 
- export async function uploadProducts(): Promise<Product[]> {
+const uploadProducts = async (): Promise<Product[]> => {
     try {
         const response = await fetch('https://dummyjson.com/products');
-        const data = await response.json();
-        state.allProducts = data.products.filter((product: Product) =>
-            product.category === "beauty" ||
-            product.category === "fragrances" || 
-            product.category ===  "furniture"
-        );
-
-        displayProducts(state.allProducts.slice(0, state.visibleProducts));
-        return data.products;
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data: ProductApiResponse = await response.json();
+        return filterProductsByCategory(data.products)
     } catch (error) {
-        console.error("Error fetching products:", error);
+        console.log("Error fetching", error);
         return [];
     }
-}
+};
+
+
+
+export default uploadProducts;
+
+
+
+
+
+
+

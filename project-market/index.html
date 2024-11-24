@@ -11,71 +11,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
     <title>YouMarket ♡</title>
 </head>
 
 <body>
 
-    <header class="nav-bar">
-        <p class="header-title"> YouMarket ♡</p>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li> <a href="#blackFriday">Black friday</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div id="root"></div>
 
-        <div class="header-icons">
-            <i class="fas fa-shopping-cart fa-sm">
-                <span class="cart-number" id="cart-counter">0</span>
-            </i>
-            <i class="fa-solid fa-heart-circle-check"></i>
-            <i class="fa-solid fa-user fa-sm"></i>   
-        </div>
-    </header>
-    <section class="header-banner">
-        <p>Black friday! 24Hours only 50% OFF</p>
-    </section>
-    <section class="section-search-option" id="blackFriday">
-        <div class="container-search">
-            <input class="search-input" id="search-products" type="text" placeholder="  Search...">
-            <button class="button-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>       
-        </div>
-        <div>
-            <select class="select-option" id="category-selector">
-                <option value="all"> All categories </option>
-                <option value="fragrances"> Fragances </option>
-                <option value="beauty"> Makeup </option>
-                <option value="furniture"> Room accs </option>
-            </select>
-        </div>
-    </section>
-
-    <section class="section-container-card" id="products">
-        <h3 class="section-subtittle">Welcome to YouMarket, your one-stop shop for beauty, accessories, and so much more! Discover a world of elegance, 
-            style, and self-care, all in one place. Whether you're seeking the latest beauty trends, 
-            chic accessories to elevate your look, or unique finds to pamper yourself, YouMarket has it all.</h3>
-        <div class="container-card" id="products-container">
-            <!--Here the content of the cards will be shown-->
-         </div> 
-        <button class=" see-more" id="load-more-button"> see more products </button>
-    </section>
-    <footer id="contact">
-        <div class="container-icons">
-            <p class="footer-text-first">Follow us on our social networks</p>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-tiktok"></i>
-            <p class="header-title header-title-footer">YouMarket ♡</p>
-        </div>
-        <p class="footer-text-second "> © 2024 YouMarket ♡
-            <br>All rights reserved.
-        </p>
-    </footer>
-   
-    <script type="module" src="/src/index.ts"></script>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>
