@@ -40,15 +40,15 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 
 ## 🔰 Características principales:
 
--`Carrito de compras:` Incrementa dinámicamente el contador de productos al agregar productos al carrito. Además, al hacer click en el icono del carrito, te dirige a la vista de cart.
--`Favoritos:` Permite marcar productos como favoritos. `Lógica pendiente`
--`Perfil de usuario:` Función en desarrollo.
--`Buscador: `
+- `Carrito de compras:` Incrementa dinámicamente el contador de productos al agregar productos al carrito. Además, al hacer click en el   icono del carrito, te dirige a la vista de cart.
+- `Favoritos:` Permite marcar productos como favoritos. `Lógica pendiente`
+- `Perfil de usuario:` Función en desarrollo.
+- `Buscador: `
   1.Permite realizar una búsqueda de productos a través de la caja de busqueda.
   2.La búsqueda se realiza en las propiedades `title`, `description`, `price`, y `rating` de los productos.
   3.El filtro de búsqueda no es sensible a mayúsculas/minúsculas.
--`Desplegable de categorías: `Se añadió un menú desplegable `<select>` con las categorías que escogí de la API. 
--`Diseño responsive: `
+- `Desplegable de categorías: `Se añadió un menú desplegable `<select>` con las categorías que escogí de la API. 
+- `Diseño responsive: `
   1. Compatible con dispositivos móviles, tablets y desktops.
   2. Usé Media Queries en CSS para personalizar estilos en distintos breakpoints.
   3. Utilicé Flexbox para una estructura flexible y adaptable de cada elemento.
@@ -71,50 +71,55 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 
 ## 📁 Esctructura  de carpetas y archivos 
 
-- `project-market/`
-  - `public/`
-   - `src/`
-     - `assets/`
-      - `components/`
-         - `card/`
-           -`Productcard.tsx`
-           -`ProductList.tsx`
-         - `filters/`
-           -`CategoryFilter.tsx`
-           -`SearchFilter.tsx`
-         - `footer/`
-           -`Footer.tsx`
-         - `navbar/`
-           -`Navbar.tsx`
-      - `context/`
-         -`reducer.ts/`
-      - `domain/`
-        -`Product.ts`
-      - `hooks/`
+-`project-market/`
+  -`public/`
+   -`src/`
+     -`assets/`
+     -`components/`
+      -`card/`
+         -`Productcard.tsx`
+         -`ProductList.tsx`
+      -`filters/`
+         -`CategoryFilter.tsx`
+         -`SearchFilter.tsx`
+      -`footer/`
+         -`Footer.tsx`
+         -`navbar/`
+         -`Navbar.tsx`
+      -`context/`
+          -`reducer.ts/`
+      -`domain/`
+         -`Product.ts`
+      -`hooks/`
         -`useProduct.ts`
       - `Pages/` 
         -`Cart/` 
-          -`Cart.tsx` 
+         -`Cart.tsx` 
         -`Home/` 
-          -`Home.tsx` 
+         -`Home.tsx` 
       -`services/`
         -`api.ts` 
-      - `state/`
+      -`state/`
         -`Categories.ts` 
         -`ProductState.ts` 
-      - `utils/`
+      -`utils/`
         -`filterCategory.ts`
-      - `App.tsx`
-      - `main.tsx`
-      - `module-routes.ts`
-      - `style.css`
+      -`App.tsx`
+      -`main.tsx`
+      -`module-routes.ts`
+      -`style.css`
    - `index.html`
    - `package.json`
 
 
+
+
 ## 🌵 Ramas del proyecto
 
-   ```feature/diseño-y-estilos feature/javaScript feature/typescript feature/react-fundamentos```
+   `feature/diseño-y-estilos `
+   `feature/javaScript `
+   `feature/typescript ` 
+   `feature/react-fundamentos`
 
 
 ## Tareas Completadas
@@ -128,16 +133,20 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 ## 📋 Instalación 
 
 1. Clona el repositorio:
-  ```git clone https://github.com/Valmontx/BOOTCAMP-FRONTEND-REACT-NTT.git```
+  ```
+  git clone https://github.com/Valmontx/BOOTCAMP-FRONTEND-REACT-NTT.git
 
 2. Ingresa a la carpeta
-   ```cd project/market ```
+   cd project/market 
 
 3. Inicia el servidor 
-   ```npm run dev ```
+   npm run dev 
 
 4. Rama en la que se está trabajando
-   ```git checkout feature/react-fundamentos```  
+   git checkout feature/react-fundamentos
+  
+   ```
+ 
 
 
 
