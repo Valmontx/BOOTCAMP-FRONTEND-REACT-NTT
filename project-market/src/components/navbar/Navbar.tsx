@@ -1,9 +1,10 @@
 import {NavbarProps} from "../../domain/product";
 import { Link } from "react-router-dom";
 import { ModuleRoutes } from "../../module-routes";
+import { useCart } from "../../hooks/useCart";
 
-const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
-
+const Navbar: React.FC<NavbarProps> = () => {
+ const {getItemCount} = useCart()
     return (
         <header className="nav-bar">
             <p className="header-title">YouMarket ♡</p>
@@ -15,9 +16,9 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
             </ul>
             
             <div className="header-icons">
-            <Link to ={`/${ModuleRoutes.Cart}`} className="icon-link" >
+            <Link to ={`/${ModuleRoutes.Cart}`} className="icon-cart" >
             <i className="fas fa-shopping-cart fa-sm"> </i>
-            <span className="cart-number"> ({cartCount})  </span>
+            <span className="cart-number"> ({getItemCount()})  </span>
             </Link>
              
             <i className="fa-solid fa-heart-circle-check"></i>

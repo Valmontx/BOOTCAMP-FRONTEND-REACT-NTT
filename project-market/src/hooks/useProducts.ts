@@ -69,6 +69,7 @@ const useProducts = ( ) => {
    
   return {
     products,
+    isAllLoaded,
     visibleProducts,
     searchProducts,
     categorieFilter,

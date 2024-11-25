@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
     background-color: --backgroundPrincipal;
     font-family: "Sharp Sans Display No1", "Open Sans", Helvetica, Arial, sans-serif;
@@ -44,9 +44,9 @@ html{
     top: 10px;
     right: 10px;
     cursor: pointer;
-    
-   
-} 
+
+
+}
 
 .fa-heart.active {
     color: var(--pinkHover);
@@ -55,13 +55,38 @@ html{
 .fa-star {
     color: #f9ec00;
 }
-.loading-spinner{
+
+.loading-spinner {
     color: var(--pinkHover);
 }
 
-.icon-link {
+.icon-cart {
     text-decoration: none;
     color: #27251f !important;
+
+}
+
+
+.text-green-500 {
+    background-color: #71f900;
+    width: 54px;
+    height: 20px;
+    color: rgb(20, 20, 20);
+    font-size: 9px ;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+.text-red-500 {
+    background-color: rgb(244, 20, 20);
+    width: 70px;
+    height: 20px;
+    color: #ffff;
+    font-size: 9px ;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px;
 }
 
 /*--------------------------------------------------------*/
@@ -221,7 +246,6 @@ li a {
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    border: 1px solid #46464631;
     margin-bottom: 30px;
 }
 
@@ -261,6 +285,9 @@ li a {
     background-size: cover;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card-button {
@@ -304,8 +331,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding:17px;
-    margin-top:20px;
+    padding: 17px;
+    margin-top: 20px;
     background-color: var(--blackBold);
     color: var(--colorWhiteFont);
 }
@@ -349,6 +376,9 @@ footer {
 
 .card-button:hover {
     background-color: var(--pinkHover);
+}
+.card-img:hover{
+    transform: scale(1.2);
 }
 
 
@@ -405,14 +435,17 @@ footer {
         height: 380px;
         border: none;
     }
+
     .card-description {
         display: none;
-        
+
     }
+
     .card p {
         text-align: center;
     }
-    .card h2{
+
+    .card h2 {
         text-align: center;
     }
 
@@ -420,32 +453,38 @@ footer {
         width: 100%;
         height: 160px;
         object-fit: contain;
+       
     }
 
     .price {
         font-weight: 300;
     }
-     .card-button {
+
+    .card-button {
         width: 180px;
-     }
+    }
+
     .see-more {
         width: 200px;
         font-size: 11px;
     }
 
-    .footer-text-first{
+    .footer-text-first {
         text-align: center;
     }
-    .footer-text-second{
+
+    .footer-text-second {
         margin-bottom: 0;
     }
+
     footer p {
         text-align: center;
         margin-bottom: 12px;
-        
+
 
     }
-    .container-icons{
+
+    .container-icons {
         text-align: center;
     }
 }

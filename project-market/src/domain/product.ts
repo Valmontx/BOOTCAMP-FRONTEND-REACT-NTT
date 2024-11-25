@@ -8,16 +8,14 @@ export interface Product {
   rating: number;
   images: string[];
   cartCount: number;
+  availabilityStatus: string
+  quantity: number
+  
 }
 
 export interface ProductProps {
-  key: number;
-  title: string;
-  description: string;
-  price: number;
-  rating: number;
-  images: string;
-  incrementCart: () => void;
+  product: Product;
+  
 
 }
 

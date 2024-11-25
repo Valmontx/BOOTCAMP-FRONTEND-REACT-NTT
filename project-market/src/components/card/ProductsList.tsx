@@ -4,9 +4,14 @@ import { ProductListProps } from "../../domain/product";
 import useProducts from "../../hooks/useProducts";
 
 
-const ProductList: React.FC<ProductListProps> = ({ products, incrementCart }) => {
+
+
+
+const ProductList: React.FC<ProductListProps> = ({ products, incrementCart, }) => {
     const { isLoading } = useProducts();
 
+
+    
     return (
         <div
             className="container-card">
@@ -16,15 +21,7 @@ const ProductList: React.FC<ProductListProps> = ({ products, incrementCart }) =>
                 </div>
             ) : (
                 products.map((product) => (
-                    <ProductCard
-                        key={product.id}
-                        title={product.title}
-                        description={product.description}
-                        price={product.price}
-                        rating={product.rating}
-                        images={product.images[0]}
-                        incrementCart={incrementCart}
-                    />
+                    <ProductCard key={product.id} product={product} />
                 ))
             )}
         </div>
