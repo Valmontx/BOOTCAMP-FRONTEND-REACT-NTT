@@ -3,7 +3,7 @@
 const Footer: React.FC<{}> = ({ }) => {
     return (
 
-        <section className="container-icons">
+        <section className="container-icons" id="contact">
             <p className="footer-text-first">Follow us on our social networks</p>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-facebook"></i>

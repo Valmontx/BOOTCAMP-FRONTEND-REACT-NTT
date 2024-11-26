@@ -5,7 +5,7 @@ export const useDistrict = () => {
     const [districts, setDistricts] = useState<{ id: number; name: string }[]>([]);
 
     useEffect(() => {
-        const fetchDistricts = async () => {
+        const getDistrict = async () => {
             try {
                 const response = await fetch("/district.json"); 
                 const data = await response.json();
@@ -15,7 +15,7 @@ export const useDistrict = () => {
             }
         };
 
-        fetchDistricts();
+        getDistrict();
     }, []);
 
     return districts;

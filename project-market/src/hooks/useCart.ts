@@ -1,4 +1,4 @@
-// paso 3. Consumir  consumir el contexto 
+// paso 3. Consumir el contexto 
 import { useContext } from "react";
 import { CartContext } from "../context/CartContex";
 

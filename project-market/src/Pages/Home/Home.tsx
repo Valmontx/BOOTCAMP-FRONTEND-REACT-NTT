@@ -25,7 +25,7 @@ const Home: FC = () => {
     <div className="App">
       <Navbar cartCount={cartCount} />
       <section className="header-banner">
-        <p>Black friday! 24Hours only 50% OFF</p>
+        <p className="header-banner-text" >Black friday! 24Hours only 50% OFF</p>
       </section>
       <div className="section-search-option">
         <SearchFilter onSearch={handleSearch} />

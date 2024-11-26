@@ -40,7 +40,7 @@
     
 }
 
-.select-form{
+.checkout-form select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -77,4 +77,8 @@
     border: 1px solid #ededed;
     font-weight: 100;
 
+}
+
+.text-error{
+    color: rgb(245, 51, 51);
 }

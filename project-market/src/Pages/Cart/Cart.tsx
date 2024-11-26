@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/Navbar"
 import { useCart } from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducts";
 
+
 import { FC } from "react"
 
 const Cart: FC = ({}) => {
@@ -31,15 +32,15 @@ const Cart: FC = ({}) => {
                 </div>
                 <div className="container-cart-quantity">
                   <span onClick={() => decrementQuantity(product.id)}>
-                    <i className="fa-solid fa-minus"></i>
+                    <i className="fa-solid fa-minus fa-sm"></i>
                   </span>
-                  <p className="product-quantity" >{product.quantity}</p>
+                  <p className="product-quantity " >{product.quantity}</p>
                   <span onClick={() => incrementQuantity(product.id)}>
-                    <i className="fa-solid fa-plus"></i>
+                    <i className="fa-solid fa-plus fa-sm"></i>
                   </span>
                 </div>
                 <div className="container-price-and-delete">
-                  <p className="product-price-quantity">$  {(product.price * product.quantity).toFixed(2)}</p>
+                  <p className="product-price-quantity"> <span>Subtotal:</span> {(product.price * product.quantity).toFixed(2)}$</p>
                   <button className="product-cart-button-delete" onClick={() => deleteFromCart(product.id)} >
                     <i className="fa-solid fa-xmark "></i>
                   </button>
@@ -47,7 +48,7 @@ const Cart: FC = ({}) => {
               </div>
             ))}
           </div>
-          <FooterCart />
+          <FooterCart  />
         </div>
       </section>
       <footer>

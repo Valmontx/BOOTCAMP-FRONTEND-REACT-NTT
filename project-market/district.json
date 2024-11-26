@@ -1,10 +1,29 @@
-
-
 [
-    { "id": 1, "name": "Miraflores" },
-    { "id": 2, "name": "San Isidro" },
-    { "id": 3, "name": "Barranco" },
-    { "id": 4, "name": "Surco" },
-    { "id": 5, "name": "La Molina" },
-    { "id": 5, "name": "Jesus Maria" }
+    {
+        "id": 1,
+        "name": "Miraflores"
+    },
+    {
+        "id": 2,
+        "name": "San Isidro"
+    },
+    {
+        "id": 3,
+        "name": "Barranco"
+    },
+    {
+        "id": 4,
+        "name": "Surco"
+    },
+    {
+        "id": 5,
+        "name": "La Molina"
+    },
+    {
+        "id": 5,
+        "name": "Jesus Maria"
+    }
 ]
+
+	
+

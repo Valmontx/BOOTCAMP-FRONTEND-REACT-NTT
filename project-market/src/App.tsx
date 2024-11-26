@@ -6,6 +6,13 @@ import Home from "./Pages/Home/Home";
 import "./style.css"
 import "./Pages/Cart/cartStyle.css"
 import "./Pages/Cart/components/FooterStyle.css"
+import "./components/card/cardStyle.css"
+import "./components/filters/filterStyle.css"
+import "./components/navbar/navbarStyle.css"
+
+import "./Pages/Home/homeStyle.css"
+
+
 import { CartProvider } from "./context/CartContex";
 
 const App: FC = () => {

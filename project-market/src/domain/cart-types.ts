@@ -1,20 +1,34 @@
-//Aqui se define los tipos y las acciones 
+//Tipos y las acciones 
 
 import { ReactNode } from "react";
 import { Product } from "./product";
 
-// Define el tipo del contexto
+//Tipos para formulario
+
+export interface FormData {
+  fullname: string;
+  district: string;
+  adress: string;
+  phone: string;
+}
+
+export interface FormErrors {
+  [key: string]: string;
+}
+
+//tipos para carrito 
+
 export interface CartContextType {
   cart: Product[];
   addToCart: (product: Product) => void;
   incrementQuantity: (quantity: number) => void;
   decrementQuantity: (quantity: number) => void;
   deleteFromCart: (productId: number) => void;
-  totalProducts: () => number;
-  getItemCount: () => number;
+  totalProducts: () => number; // Total de la suma de todos los productos
+  getItemCount: () => number; //Total de c/u
 }
  
-// Define el tipo para las props del proveedor
+// Tipo para las props del proveedor
 export interface CartProviderProps {
   children: ReactNode;
 }

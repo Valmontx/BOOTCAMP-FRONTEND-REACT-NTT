@@ -12,6 +12,20 @@ export const CartContext = createContext<CartContextType | undefined>(undefined)
 export const CartProvider = ({ children }: CartProviderProps) => {
     const [cart, setCart] = useState<Product[]>([]);
 
+    // Recuperar los prodcutos del carrito al cargar la página
+    useEffect(() => {
+        const storedCart = localStorage.getItem('cart');
+        if (storedCart) {
+            setCart(JSON.parse(storedCart));
+        }
+    }, []);
+
+    // Guarda productos del carrito en el localStorage cada vez que refresque
+    useEffect(() => {
+        if (cart.length > 0) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+    }, [cart]);
 
     const addToCart = (product: Product) => {
         const productInCartIndex = cart.findIndex(item => item.id === product.id);
@@ -29,8 +43,8 @@ export const CartProvider = ({ children }: CartProviderProps) => {
             ]));
         }
     }
-    
-    
+
+
     const incrementQuantity = (productId: number) => {
         setCart(prevCart => prevCart.map(item =>
             item.id === productId
@@ -48,18 +62,18 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     };
 
     const deleteFromCart = (productId: number) => {
-        setCart(prevCart  => prevCart.filter(item => item.id !== productId) )
+        setCart(prevCart => prevCart.filter(item => item.id !== productId))
     }
 
-    const totalProducts  = () => {
+    const totalProducts = () => {
         return cart.reduce((acc, item) => acc + item.price * item.quantity, 0)
-    }
 
-    const getItemCount = ()=> {
+    }
+    const getItemCount = () => {
         return cart.reduce((acc, item) => acc + item.quantity, 0);
     }
 
-    
+
 
     return (
 
