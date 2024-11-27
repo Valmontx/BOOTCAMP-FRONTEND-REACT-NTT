@@ -7,7 +7,7 @@ import useProducts from "../../hooks/useProducts";
 
 import { FC } from "react"
 
-const Cart: FC = ({}) => {
+const Cart: FC = () => {
   const { cartCount } = useProducts()
   const { cart, incrementQuantity, decrementQuantity, deleteFromCart, getItemCount } = useCart()
 

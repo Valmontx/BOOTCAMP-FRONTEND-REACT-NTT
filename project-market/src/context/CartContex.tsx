@@ -75,6 +75,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
 
 
+    // el objetivo del provider es exponer el estado en memoria y la funci'on actualizadora para que sea el consumidor que ejecute la acci'on que necesite y no el provider exponga todo cuando no siempre se usa
     return (
 
         <CartContext.Provider value={{

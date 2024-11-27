@@ -1,4 +1,4 @@
-
+// permite registrar con valores vac'ios
 import { useState } from "react";
 import {FormData, FormErrors} from "../domain/cart-types"
 
@@ -20,6 +20,7 @@ export const useCheckoutForm = () => {
     const newErrors: FormErrors = {};
     let isValid = true;
 
+    // los regex deben estar en otro archivo
     if (!formData.fullname || !/^[a-zA-Z\s]+$/.test(formData.fullname)) {
       newErrors.fullname = "You must enter a valid value";
       isValid = false;
@@ -35,6 +36,7 @@ export const useCheckoutForm = () => {
       isValid = false;
     }
 
+    // los regex deben estar en otro archivo
     if (!formData.phone || !/^\d+$/.test(formData.phone)) {
       newErrors.phone = "You must enter a valid number";
       isValid = false;
@@ -52,6 +54,7 @@ export const useCheckoutForm = () => {
    
     setErrors((prev) => {
       const newErrors = { ...prev };
+      // los regex deben estar en otro archivo
       if (name === "fullname" && (!value || !/^[a-zA-Z\s]+$/.test(value))) {
         newErrors.fullname = "You must enter a valid value";
       } else if (name === "fullname") {
@@ -69,7 +72,7 @@ export const useCheckoutForm = () => {
       } else if (name === "adress") {
         delete newErrors.adress;
       }
-  
+      // los regex deben estar en otro archivo
       if (name === "phone" && (!value || !/^\d+$/.test(value))) {
         newErrors.phone = "You must enter a valid number";
       } else if (name === "phone") {
