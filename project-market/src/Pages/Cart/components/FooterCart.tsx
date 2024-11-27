@@ -22,6 +22,7 @@ const FooterCart: React.FC = () => {
             alert( "Hola " + formData.fullname  + "  your order has been successfully completed!⭐") ;
             console.log(formData);
             resetForm();
+            // ??? por que no el useNavigate de react router dom
             window.location.href = "/";
         }
     };

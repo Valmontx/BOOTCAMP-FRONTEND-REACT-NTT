@@ -1,6 +1,6 @@
 
 
-const Footer: React.FC<{}> = ({ }) => {
+const Footer: React.FC = () => {
     return (
 
         <section className="container-icons" id="contact">

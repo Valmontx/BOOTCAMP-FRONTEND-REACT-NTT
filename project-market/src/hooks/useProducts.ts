@@ -10,6 +10,7 @@ const useProducts = ( ) => {
     const [isAllLoaded, setIsAllLoaded] = useState(false); 
     const [cartCount, setCartCount] = useState(0);
     const [searchProducts, setSearchProducts] = useState("")
+    // no palabras m'agicas usemos constantes
     const [categorieFilter, setcategorieFilter] = useState("all")
     const [isHeartActive, setIsHeartActive] = useState(false);
     
@@ -51,9 +52,9 @@ const useProducts = ( ) => {
 
   // Selector de productos por categoría
   const handleCategoryFilter = (category: string) => {
-    console.log("Selected category:", category);
     setcategorieFilter(category);
 
+    // no palabras m'agicas, usemos constantes
     const filterProducts = products.filter((product) =>
       category === "all" ? true : product.category === category
     );
