@@ -6,10 +6,10 @@ Se realizó una iteración  completamente diferente del  market anterior. Esta v
 lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
 
 ## 📸 Vista previa del proyecto desktop:
-![Vista previa de youMarket ](./src/assets/youMarket.png)
+![Vista previa de youMarket ](./src/assets/youMarketSecond.png)
 
 ## 📸 Vista previa del proyecto mobile:
-<img src="./src/assets/mobile.png" alt="Vista previa de youMarket" width="300">
+<img src="./src/assets/viewCart.png" alt="Vista previa de youMarket" width="300">
 
 ## 🛠️ Migración a React con typescript
 
@@ -34,14 +34,28 @@ Se utilizó `useState`para:
  - El contador del carrito
  - El boton de favoritos.
  - Un loading antes de mostrar los productos. 
+ - Formulario con los datos del usario para el envio de productos.
 
 ## 💻 Uso de useEffect
-Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch API` el hook se ejecuta una vez al montar al componente para realizar la llamada al servicio y actualizar el estado de los productos.
+Se utilizó `useEffect` para 
+
+- Cargar y mostrar los productos utilizando la `Fetch API` el hook se ejecuta una vez al montar al componente para realizar la llamada al servicio y actualizar el estado de los productos.
+- Guardar el estado del carrito en el localStorage y recuperar los datos almacenados cuando la página se recarga.
+- Lectura de un archivo Json que contiene los distritos en el formulario.
+
+## 💻 Uso de useContext
+Se utilizó `useContext` para 
+- Crear un contexto global llamado CartContext que permite compartir el estado del carrito entre componentes.
 
 
 ## 🔰 Características principales:
 
-- `Carrito de compras:` Incrementa dinámicamente el contador de productos al agregar productos al carrito. Además, al hacer click en el   icono del carrito, te dirige a la vista de cart.
+- `Carrito de compras:` 
+  1. Incrementa dinámicamente el contador de productos al agregar productos al carrito. 
+  2. Se puede navegar a la vista del carrito (Cart) donde se pueden visualizar los productos seleccionados.
+  3.Cada producto cuenta con botones para incrementar y decrementar la cantidad, además de la opción para eliminar el producto del carrito.
+  4. El precio total se actualiza automáticamente en función de las cantidades seleccionadas.
+- `Formulario de compras:`Se añadió un formulario que se debe completar con los datos del usuario para realizar la compra.
 - `Favoritos:` Permite marcar productos como favoritos. `Lógica pendiente`
 - `Perfil de usuario:` Función en desarrollo.
 - `Buscador: `
@@ -66,6 +80,7 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
 | **modules**    | import y export                     |
 | **React**      | Hooks, componentes,react-router-dom |
 | **Typescript** | Tipado estático                     |
+|**localStorage**| Mantiene los datos en el carrito    |
 |**Font Awesome**| Iconos personalizados.              |
 |**Google Fonts**| Fuentes personalizadas.             |
 
@@ -80,24 +95,37 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
       - `card/`
         - `ProductCard.tsx`
         - `ProductList.tsx`
+        - `cardStyle.css`
       - `filters/`
         - `CategoryFilter.tsx`
         - `SearchFilter.tsx`
+        - `filterStyle.css`
       - `footer/`
         - `Footer.tsx`
       - `navbar/`
         - `Navbar.tsx`
+        - `navbarStyle.css`
       - `context/`
+        - `CartContext.tsx`
         - `reducer.ts`
       - `domain/`
         - `Product.ts`
+        - `cart-typr.ts`
       - `hooks/`
         - `useProduct.ts`
+        - `useCart.ts`
+        - `useCheckForm.ts`
+        - `useDistrict.ts`
       - `Pages/`
         - `Cart/`
-          - `Cart.tsx`
+         - `components/`
+          - `FooterCart.tsx`
+          - `FooterStyle.css`
+         - `Carts.tsx`
+         - `CartStyle.css`
         - `Home/`
           - `Home.tsx`
+          - `homeStyle.css`
       - `services/`
         - `api.ts`
       - `state/`
@@ -113,8 +141,6 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
   - `package.json`
 
 
-
-
 ## 🌵 Ramas del proyecto
   
   ```
@@ -122,14 +148,16 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
    feature/javaScript 
    feature/typescript  
    feature/react-fundamentos
+   feature/react-implementacion
   ```
 
 
 ## Tareas Completadas
 
 - [x]  Migración de Javascript a React con Typescript.
-- [x]  Uso de useState y useEffect.
+- [x]  Uso de useState useEffect useContext.
 - [x]  Arquitectura de carpetas. 
+- [x]  Vista de carrito con el resumen de los produtos y su formulario. 
 - [x]  El proyecto funcional
 
 
@@ -146,12 +174,10 @@ Se utilizó `useEffect` para cargar y mostrar los productos utilizando la `Fetch
    npm run dev 
 
 4. Rama en la que se está trabajando
-   git checkout feature/react-fundamentos
+   git checkout feature/react-implementacion
   
    ```
  
-
-
 
 ## Créditos
 - Proyecto desarrollado como parte del bootcamp **NTT DATA**.

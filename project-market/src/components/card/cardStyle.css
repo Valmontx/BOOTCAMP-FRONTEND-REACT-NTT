@@ -35,7 +35,7 @@
 
 
 .card h2 {
-    font-size: 15px;
+    font-size: 13px;
     margin: 10px;
     color: #424242;
     text-transform: uppercase;
@@ -45,7 +45,7 @@
 }
 
 .card p {
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 10px;
@@ -60,6 +60,7 @@
     font-weight: bold;
     font-size: 1.4em !important;
     color: var(--blackFont) !important;
+    
 }
 
 .card-img {
@@ -123,10 +124,6 @@
         justify-content: center;
         
         
-    }
-
-    .section-subtittle {
-        display: none;
     }
 
     .card-button {

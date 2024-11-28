@@ -1,28 +1,29 @@
-import { useState,} from "react";
+import { useState, } from "react";
 import { useDistrict } from "../../../hooks/useDisctrict";
 import { useCheckoutForm } from "../../../hooks/useCheckForm"
 import { useCart } from "../../../hooks/useCart";
+import { useNavigate } from "react-router-dom";
+
 
 
 
 const FooterCart: React.FC = () => {
-    
-    
+
+
     const [showCheckoutForm, setShowCheckoutForm] = useState(false);
     const district = useDistrict();
     const { formData, errors, handleInputChange, validateForm, resetForm } = useCheckoutForm()
-    const {  totalProducts } = useCart()     
-
-
+    const { totalProducts } = useCart()
+    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
         if (validateForm()) {
-            alert( "Hola " + formData.fullname  + "  your order has been successfully completed!⭐") ;
+            alert("Hola " + formData.fullname + "  your order has been successfully completed!⭐");
             console.log(formData);
             resetForm();
-            window.location.href = "/";
+            navigate("/");
         }
     };
 
@@ -56,41 +57,41 @@ const FooterCart: React.FC = () => {
                     <form onSubmit={handleSubmit}>
                         <label>
                             Full Name:
-                            <input type="text" 
-                            name="fullname" 
-                            required value={formData.fullname} 
-                            onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
+                            <input type="text"
+                                name="fullname"
+                                required value={formData.fullname}
+                                onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
                             {errors.fullname && <span className="text-error">{errors.fullname}</span>}
                         </label>
                         <label>
                             Adress:
-                            <input type="text" 
-                            name="adress" 
-                            required value={formData.adress} 
-                            onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
+                            <input type="text"
+                                name="adress"
+                                required value={formData.adress}
+                                onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
                             {errors.adress && <span className="text-error">{errors.adress}</span>}
                         </label>
                         <label>
                             Distric:
-                            <select 
-                            name="district" 
-                            value={formData.district} 
-                            onChange={(e) => handleInputChange(e.target.name, e.target.value)}>
+                            <select
+                                name="district"
+                                value={formData.district}
+                                onChange={(e) => handleInputChange(e.target.name, e.target.value)}>
                                 <option value="">Selecction</option>
                                 {district.map((distrito, index) => (
                                     <option key={index} value={distrito.name}>
                                         {distrito.name}
                                     </option>
-                                ))}  
+                                ))}
                             </select>
-                            {errors.district && <span className="text-error">{errors.district }</span>}
+                            {errors.district && <span className="text-error">{errors.district}</span>}
                         </label>
                         <label>
                             Phone:
-                            <input type="tel" 
-                            name="phone" 
-                            required value={formData.phone} 
-                            onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
+                            <input type="tel"
+                                name="phone"
+                                required value={formData.phone}
+                                onChange={(e) => handleInputChange(e.target.name, e.target.value)} />
                             {errors.phone && <span className="text-error">{errors.phone}</span>}
                         </label>
                         <div className="form-buttons">
