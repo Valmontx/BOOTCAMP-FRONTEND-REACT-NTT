@@ -4,8 +4,6 @@ import useProducts from '../../hooks/useProducts';
 import { useCart } from "../../hooks/useCart";
 
 
-
-
 const ProductCard: React.FC<ProductProps> = ({ product }) => {
   const { toggleHeart, isHeartActive } = useProducts();
   const { addToCart } = useCart();

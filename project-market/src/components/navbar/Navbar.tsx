@@ -2,6 +2,7 @@ import { NavbarProps } from "../../domain/product";
 import { Link } from "react-router-dom";
 import { ModuleRoutes } from "../../module-routes";
 import { useCart } from "../../hooks/useCart";
+import React from "react";
 
 const Navbar: React.FC<NavbarProps> = () => {
     const { getItemCount } = useCart()

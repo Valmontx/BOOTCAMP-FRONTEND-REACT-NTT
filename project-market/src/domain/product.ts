@@ -7,7 +7,6 @@ export interface Product {
   price: number;
   rating: number;
   images: string[];
-  cartCount: number;
   availabilityStatus: string
   quantity: number
   

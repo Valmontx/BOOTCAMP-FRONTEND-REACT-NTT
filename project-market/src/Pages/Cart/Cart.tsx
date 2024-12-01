@@ -3,6 +3,7 @@ import FooterCart from "./components/FooterCart";
 import Navbar from "../../components/navbar/Navbar"
 import { useCart } from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducts";
+import React from "react";
 
 
 import { FC } from "react"
@@ -12,6 +13,7 @@ const Cart: FC = ({}) => {
   const { cart, incrementQuantity, decrementQuantity, deleteFromCart, getItemCount } = useCart()
 
   return (
+    
     <div>
       <Navbar cartCount={cartCount} />
       <section className="header-banner">

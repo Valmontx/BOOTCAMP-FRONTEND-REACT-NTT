@@ -5,6 +5,7 @@ import SearchFilter from "../../components/filters/SearchFilter";
 import CategoryFilter from "../../components/filters/CategoryFilter";
 import Footer from "../../components/footer/Footer";
 import useProducts from "../../hooks/useProducts";
+import React from "react";
 
 
 

@@ -1,5 +1,5 @@
 import { CategoryFilterProps } from "../../domain/product"
-
+import React from "react"
 
 const CategoryFilter: React.FC<CategoryFilterProps> = ({onCategoryChange}) => {
 

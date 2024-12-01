@@ -1,4 +1,6 @@
 import {SearchFilterProps} from "../../domain/product";
+import React from "react";
+
 
 const SearchFilter: React.FC<SearchFilterProps> = ({onSearch}) => {
 

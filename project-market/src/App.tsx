@@ -1,4 +1,5 @@
 import { FC } from "react";
+import React from "react";
 import {Route , Routes} from "react-router-dom";
 import { ModuleRoutes } from "./module-routes";
 import Cart from "./Pages/Cart/Cart";
@@ -9,7 +10,6 @@ import "./Pages/Cart/components/FooterStyle.css"
 import "./components/card/cardStyle.css"
 import "./components/filters/filterStyle.css"
 import "./components/navbar/navbarStyle.css"
-
 import "./Pages/Home/homeStyle.css"
 
 

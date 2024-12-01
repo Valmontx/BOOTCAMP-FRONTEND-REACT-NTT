@@ -3,6 +3,8 @@ import { useDistrict } from "../../../hooks/useDisctrict";
 import { useCheckoutForm } from "../../../hooks/useCheckForm"
 import { useCart } from "../../../hooks/useCart";
 import { useNavigate } from "react-router-dom";
+import React from "react";
+import { Distrito } from "@/domain/cart-types";
 
 
 
@@ -11,9 +13,9 @@ const FooterCart: React.FC = () => {
 
 
     const [showCheckoutForm, setShowCheckoutForm] = useState(false);
-    const district = useDistrict();
+    const {districts}= useDistrict();
     const { formData, errors, handleInputChange, validateForm, resetForm } = useCheckoutForm()
-    const { totalProducts } = useCart()
+    const { totalProducts, cleanProducsts } = useCart()
     const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -23,6 +25,7 @@ const FooterCart: React.FC = () => {
             alert("Hola " + formData.fullname + "  your order has been successfully completed!⭐");
             console.log(formData);
             resetForm();
+            cleanProducsts();
             navigate("/");
         }
     };
@@ -78,8 +81,8 @@ const FooterCart: React.FC = () => {
                                 value={formData.district}
                                 onChange={(e) => handleInputChange(e.target.name, e.target.value)}>
                                 <option value="">Selecction</option>
-                                {district.map((distrito, index) => (
-                                    <option key={index} value={distrito.name}>
+                                {districts.map((distrito: Distrito) => (
+                                    <option key={distrito.id} value={distrito.name}>
                                         {distrito.name}
                                     </option>
                                 ))}

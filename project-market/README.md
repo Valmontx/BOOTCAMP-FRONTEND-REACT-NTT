@@ -1,4 +1,4 @@
-## React 
+## Pruebas Unitarias 
 
 ## YOUMARKET♡ 💄🛒
 
@@ -149,16 +149,16 @@ Se utilizó `useContext` para
    feature/typescript  
    feature/react-fundamentos
    feature/react-implementacion
+   feature/pruebas-unitarias
   ```
 
 
-## Tareas Completadas
+## Pruebas Unitarias - coverage 
 
-- [x]  Migración de Javascript a React con Typescript.
-- [x]  Uso de useState useEffect useContext.
-- [x]  Arquitectura de carpetas. 
-- [x]  Vista de carrito con el resumen de los produtos y su formulario. 
-- [x]  El proyecto funcional
+La cobertura de pruebas está en progreso. Continuaré trabajando en ello para asegurarme de que el proyecto esté completamente al 100%
+Se muestra un resumen de la cobertura de pruebas:
+
+![coverage ](./src/assets/coverage.png)
 
 
 ## 📋 Instalación 
@@ -174,7 +174,7 @@ Se utilizó `useContext` para
    npm run dev 
 
 4. Rama en la que se está trabajando
-   git checkout feature/react-implementacion
+   git checkout feature/pruebas-unitarias
   
    ```
  

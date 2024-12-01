@@ -26,9 +26,17 @@ export interface CartContextType {
   deleteFromCart: (productId: number) => void;
   totalProducts: () => number; // Total de la suma de todos los productos
   getItemCount: () => number; //Total de c/u
+  cleanProducsts: () => void;
+  
 }
  
 // Tipo para las props del proveedor
 export interface CartProviderProps {
   children: ReactNode;
+}
+
+//Tipo para districto
+export interface Distrito {
+  id: number;
+  name: string;
 }

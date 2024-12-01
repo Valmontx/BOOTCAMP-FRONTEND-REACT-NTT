@@ -7,7 +7,7 @@ import useProducts from "../../hooks/useProducts";
 
 
 
-const ProductList: React.FC<ProductListProps> = ({ products, incrementCart, }) => {
+const ProductList: React.FC<ProductListProps> = ({ products }) => {
     const { isLoading } = useProducts();
 
 

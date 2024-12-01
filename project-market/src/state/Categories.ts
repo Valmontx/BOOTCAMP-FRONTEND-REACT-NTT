@@ -1,4 +1,2 @@
-export const ALLOWED_CATEGORIES = 
-["beauty", 
-"fragrances",
-"furniture"] as const;
+export type ProductCategory = "beauty" | "fragrances" | "furniture";
+export const ALLOWED_CATEGORIES: ProductCategory[] = ["beauty", "fragrances", "furniture"];

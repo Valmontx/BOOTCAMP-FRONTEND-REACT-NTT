@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { Product } from "../domain/product";
 import { CartContextType, CartProviderProps } from "../domain/cart-types";
+import React from "react";
 
 
 // 1. Crear el contexto
@@ -73,6 +74,10 @@ export const CartProvider = ({ children }: CartProviderProps) => {
         return cart.reduce((acc, item) => acc + item.quantity, 0);
     }
 
+    const cleanProducsts = () => {
+        setCart([]);
+    }
+
 
 
     return (
@@ -84,7 +89,8 @@ export const CartProvider = ({ children }: CartProviderProps) => {
             decrementQuantity,
             deleteFromCart,
             totalProducts,
-            getItemCount
+            getItemCount,
+            cleanProducsts
         }}>
             {children}
 
