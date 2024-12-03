@@ -11,38 +11,58 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid #343333;
     z-index: 1000;
+    gap:10px;
 }
 
 ul {
     display: flex;
     gap: 50px;
     list-style: none;
+    
 }
 
 li a {
     text-decoration: none;
     color: var(--whitebold);
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     font-family: "Sweet Sans Medium", "Arial", sans-serif;
     text-transform: uppercase;
+    
 }
 
 .header-title {
     font-family: "Montserrat", serif;
     color: var(--blackFont);
-    font-size: 1.2em;
-    margin-left: 15px;
+    font-size: 1.1em;
+    margin-left: 5px;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
 }
 
 .header-icons i {
-    margin: 8px;
+    margin: 10px;
     cursor: pointer;
+    color: rgb(23, 23, 23);
 
 }
+
+.cart-number{
+    width: 20px;
+    height: 20px;
+    background-color: #fd70af;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-size: 10px; 
+    top: 12px;
+    right: 46px;
+    padding: 3px;
+}
+
+
 
 @media (min-width: 320px) and (max-width: 720px) {
     

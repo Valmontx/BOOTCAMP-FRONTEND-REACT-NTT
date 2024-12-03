@@ -1,4 +1,12 @@
-## Pruebas Unitarias 
+## Proyecto integrador
+
+## Credenciales: 
+
+```
+username: emilys
+password: emilyspass / prueba 
+
+```
 
 ## YOUMARKET♡ 💄🛒
 

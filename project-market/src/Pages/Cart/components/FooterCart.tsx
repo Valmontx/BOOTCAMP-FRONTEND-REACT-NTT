@@ -4,7 +4,9 @@ import { useCheckoutForm } from "../../../hooks/useCheckForm"
 import { useCart } from "../../../hooks/useCart";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import { Distrito } from "@/domain/cart-types";
+import { Distrito } from "../../../domain/cart-types";
+import { ModuleRoutes } from "../../../module-routes";
+import Swal from 'sweetalert2'
 
 
 
@@ -22,11 +24,16 @@ const FooterCart: React.FC = () => {
         e.preventDefault();
 
         if (validateForm()) {
-            alert("Hola " + formData.fullname + "  your order has been successfully completed!⭐");
+            Swal.fire({
+                title: `¡Hi, ${formData.fullname}! 🎉`,
+                text: "Your order has been successfully completed.",
+                icon: "success",
+                confirmButtonText: "Acept"
+              });
             console.log(formData);
             resetForm();
             cleanProducsts();
-            navigate("/");
+            navigate(ModuleRoutes.Home);
         }
     };
 

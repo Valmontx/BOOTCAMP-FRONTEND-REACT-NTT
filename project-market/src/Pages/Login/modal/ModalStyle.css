@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
+  .forgot-pass{
+    margin-bottom: 10px;
+   font-size: 18px;
+  }
+
+  .container-input-button{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-input-button input{
+    
+    border: 1px solid #d8d8d8;
+    text-indent: 5px;
+    border-radius: 3px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 18px;
+  }
+
+  .container-input-button button{
+    margin-top: 10px;
+    margin-bottom: 18px ;
+  }
+
+  .container-button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .container-button button{
+    width: 70px;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color:#ffff;
+    background-color: rgb(23, 23, 23);
+  }
+  .error-text {
+    color:  rgb(245, 51, 51);
+    font-size: 12px;
+  }
+  
+  .success-text {
+    color: rgb(15, 140, 15);
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  

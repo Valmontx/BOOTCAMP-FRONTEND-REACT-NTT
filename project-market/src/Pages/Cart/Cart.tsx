@@ -53,9 +53,7 @@ const Cart: FC = ({}) => {
           <FooterCart  />
         </div>
       </section>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   )
 

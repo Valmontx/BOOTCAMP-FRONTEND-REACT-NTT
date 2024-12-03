@@ -41,9 +41,10 @@ const Home: FC = () => {
           {isAllLoaded ? "All products are loaded" : "see more products"}
         </button>
       </section>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
+     
+        
+      
     </div>
   );
 };

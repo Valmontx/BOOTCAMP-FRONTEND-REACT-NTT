@@ -52,7 +52,7 @@
 
 .product-cart-tittle {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .product-cart-price {
@@ -78,10 +78,11 @@
     margin-left: 10px;
     margin-right: 10px;
     font-size: 13px;
+    color:#4a4a4a;
 }
 
 .product-price-quantity {
-    font-size: 17px;
+    font-size: 15px;
     color: #d61717;
     font-weight: 600;
     font-family: "Arial", sans-serif;
@@ -91,7 +92,7 @@
 .product-price-quantity span {
     color: rgb(142, 144, 145);
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .container-price-and-delete {
@@ -142,7 +143,7 @@ span i {
     border: 1px solid #ededed;
     justify-content: flex-end;
     height: 410px;
-    width: 365px
+    width: 365px;
 }
 
 .container-subtotal {

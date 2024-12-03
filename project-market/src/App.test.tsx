@@ -9,8 +9,6 @@ import { productResponseMock } from "./services/__mock__/productsMock";
 
 
 
-
-
 const renderComponent = async (initialEntries = [ModuleRoutes.Home]): Promise<RenderResult> => {
     const component = await act(async () =>
         render(
