@@ -3,7 +3,7 @@
 ## Credenciales: 
 
 ```
-username: emilys
+username: emilys /prueba
 password: emilyspass / prueba 
 
 ```
@@ -14,7 +14,10 @@ Se realizó una iteración  completamente diferente del  market anterior. Esta v
 lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
 
 ## 📸 Vista previa del proyecto desktop:
-![Vista previa de youMarket ](./src/assets/youMarketSecond.png)
+![Vista previa de youMarket ](./src/assets/login.png)
+
+![Vista previa de youMarket ](./src/assets/signin.png)
+
 
 ## 📸 Vista previa del proyecto mobile:
 <img src="./src/assets/viewCart.png" alt="Vista previa de youMarket" width="300">
