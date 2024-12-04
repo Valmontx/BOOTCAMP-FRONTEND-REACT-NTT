@@ -1,4 +1,4 @@
-import { showErrorNotification, showSuccessNotification } from "../utils/notificationSerive";
+import { showErrorNotification, showSuccessNotification } from "../utils/notificationSerivice";
 import { validateUsername } from "../utils/regexUtils";
 import { useAuthLogin } from "./useAuthLogin";
 

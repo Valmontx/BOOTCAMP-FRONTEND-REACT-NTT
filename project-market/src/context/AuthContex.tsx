@@ -30,7 +30,7 @@ export const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
     const response = await loginService(username, password);
     if (response.success) {
-      localStorage.setItem("token", response.token);
+      localStorage.setItem("token", response.token );
       localStorage.setItem("username", username);
 
       setIsAuthenticated(true);

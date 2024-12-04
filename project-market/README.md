@@ -1,6 +1,38 @@
 ## Proyecto integrador
 
-## Credenciales: 
+**Implementacion del login**
+Después de crear el market, se añadió una vista de login para validar los datos del usuario antes de acceder a la vista principal (Home).
+
+**Principales caracteristicas**
+1.Validación en tiempo real:
+-El formulario de login muestra mensajes de error de forma instantánea.
+
+2.Recuperación de contraseña:
+-Incluye un enlace *Forgot Password* que abre un pequeño modal.
+-El usuario puede ingresar su correo electrónico.
+-Si el correo es válido, se muestra el mensaje: `Information sent to the entered email.`Si el correo no es válido o no ha ingresado nada, aparece el mensaje de error:`Please enter a valid email address.`
+
+3.Mensajes de alerta:
+-Notifica al usuario si hubo un error al ingresar las credenciales.
+-En caso de éxito, se redirige al Home.
+
+4.Token de usuario y contraseña:
+-Los datos se almacenan en el localStorage después de iniciar sesión.
+
+5.Bienvenida:
+-Al ingresar a la vista del home, se muestra el mensaje en la parte superior: `Welcome: [nombre del usuario]`.
+
+6. Cerrar sesión:
+- Se agrega boton para cerrar sesion en la parte del navbar que elimina los datos guardados del localStorage y te redirecciona a login.
+
+**API utilizada para auth**
+```
+https://dummyjson.com/docs/auth
+DummyJSON
+```
+
+
+**Credenciales de prueba:** 
 
 ```
 username: emilys /prueba
@@ -8,19 +40,20 @@ password: emilyspass / prueba
 
 ```
 
-## YOUMARKET♡ 💄🛒
-
-Se realizó una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea
-lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
-
-## 📸 Vista previa del proyecto desktop:
-![Vista previa de youMarket ](./src/assets/login.png)
+## 📸 Vista previa del login desktop:
+![Vista previa de youMarket ](./src/assets/login.png)   
 
 ![Vista previa de youMarket ](./src/assets/signin.png)
 
 
 ## 📸 Vista previa del proyecto mobile:
 <img src="./src/assets/viewCart.png" alt="Vista previa de youMarket" width="300">
+
+## YOUMARKET♡ 💄🛒
+
+Se realizó una iteración  completamente diferente del  market anterior. Esta vez tenemos el YOUMARKET♡ , una tienda en linea
+lo cual podrás realizar tus compras fácilmente, podrás agregar como favorito, filtrar por categorias o por producto en especifico. 
+
 
 ## 🛠️ Migración a React con typescript
 
@@ -45,7 +78,8 @@ Se utilizó `useState`para:
  - El contador del carrito
  - El boton de favoritos.
  - Un loading antes de mostrar los productos. 
- - Formulario con los datos del usario para el envio de productos.
+ - Formulario con los datos del usuario para el envio de productos.
+
 
 ## 💻 Uso de useEffect
 Se utilizó `useEffect` para 

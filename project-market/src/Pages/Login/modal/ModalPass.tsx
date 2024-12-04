@@ -12,7 +12,7 @@ const ModalPass: React.FC<ForgotPasswordModalProps> = ({
   return (
     <div className="modal">
       <div className="modal-content">
-        <h2  className="forgot-pass">Forgot Password</h2>
+        <h2  className="reset-pass">Reset your password</h2>
 
         <div className="container-input-button">
           <input
@@ -22,8 +22,8 @@ const ModalPass: React.FC<ForgotPasswordModalProps> = ({
             onChange={onEmailChange}
           />
           <div className="container-button">
-          <button onClick={onSubmit}>Send</button>
-          <button onClick={onClose}>Close</button>
+          <button className="button-send" onClick={onSubmit}>Send</button>
+          <button className="button-close" onClick={onClose}>Cancel</button>
           </div>
 
         </div>
