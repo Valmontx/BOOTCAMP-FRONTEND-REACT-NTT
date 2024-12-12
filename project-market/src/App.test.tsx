@@ -1,3 +1,4 @@
+// no se est'an evaluando las rutas privadas y p'ublicas en este test
 import { act, render, RenderResult, screen } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import { ModuleRoutes } from "./module-routes";
