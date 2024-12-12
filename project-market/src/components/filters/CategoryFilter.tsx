@@ -1,3 +1,4 @@
+// falta test
 import { CategoryFilterProps } from "../../domain/product"
 import React from "react"
 

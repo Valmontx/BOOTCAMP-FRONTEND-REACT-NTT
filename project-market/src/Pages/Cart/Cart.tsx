@@ -1,3 +1,4 @@
+// falta test
 import Footer from "../../components/footer/Footer"
 import FooterCart from "./components/FooterCart";
 import Navbar from "../../components/navbar/Navbar"

@@ -1,3 +1,4 @@
+// falta test
 import {SearchFilterProps} from "../../domain/product";
 import React from "react";
 

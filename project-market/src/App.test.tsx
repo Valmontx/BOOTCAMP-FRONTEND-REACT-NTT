@@ -1,3 +1,4 @@
+// debe testear las rutas registradas y validar cuando una ruta es protegida o p'ublica
 import { act, render, RenderResult, screen } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import { ModuleRoutes } from "./module-routes";
