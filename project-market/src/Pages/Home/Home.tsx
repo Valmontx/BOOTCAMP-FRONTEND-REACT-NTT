@@ -1,3 +1,4 @@
+// el requerimiento es crear un hook de paginaci'on
 import {FC}  from "react";
 import ProductList from "../../components/card/ProductsList";
 import Navbar from "../../components/navbar/Navbar";
