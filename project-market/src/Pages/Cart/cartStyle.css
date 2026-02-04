@@ -192,12 +192,22 @@ span i {
 
 @media (min-width: 320px) and (max-width: 720px) {
 
+
+
+    section{
+        flex-direction: column;
+    }
+
+    
     .container-section-cart {
+       
+        margin-right:0 ;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .products-cart {
+        width: 350px;
         position: relative;
         margin-left: 0;
         height: auto;

@@ -65,7 +65,14 @@ li a {
 
 
 @media (min-width: 320px) and (max-width: 720px) {
-    
+
+.nav-bar {
+       
+      box-sizing: border-box;
+      width: 100%;
+        
+    }
+   
     .header-title:hover{
         color: #fd70af;
     }
