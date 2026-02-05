@@ -142,7 +142,7 @@ span i {
     display: flex;
     border: 1px solid #ededed;
     justify-content: flex-end;
-    height: 410px;
+    height: 410px;    
     width: 365px;
 }
 
@@ -192,18 +192,23 @@ span i {
 
 @media (min-width: 320px) and (max-width: 720px) {
 
+    .footer-subtotal-cart {
+    width: auto;
+    height: auto !important;
+    min-height: 410px;
+    padding-bottom: 80px;
+}
 
 .checkout-form select {
-    width: 100% ;
-    font-size: 10px;         
+    font-size: 10px;  
+    padding: 6px;  
+    width: auto;   
 }
-    section{
-        flex-direction: column;
-    }
+    
 
     
     .container-section-cart {
-       
+       justify-content: center;
         margin-right:0 ;
         flex-direction: row;
         flex-wrap: wrap;
