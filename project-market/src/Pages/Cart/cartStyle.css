@@ -193,7 +193,10 @@ span i {
 @media (min-width: 320px) and (max-width: 720px) {
 
 
-
+.checkout-form select {
+    width: 100% ;
+    font-size: 10px;         
+}
     section{
         flex-direction: column;
     }

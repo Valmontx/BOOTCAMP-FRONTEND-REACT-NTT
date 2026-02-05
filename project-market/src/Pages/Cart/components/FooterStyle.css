@@ -10,7 +10,9 @@
 
 
 .checkout-form {
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background: transparent;
     border-radius: 8px;
     
@@ -81,4 +83,12 @@
 
 .text-error{
     color: rgb(245, 51, 51);
+}
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+    .checkout-form {
+        width: 100%;
+    }
+
 }
