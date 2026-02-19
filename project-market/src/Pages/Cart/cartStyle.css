@@ -201,9 +201,9 @@ span i {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
     }
-    
+
 
     .checkout-form select[name="district"] {
         font-size: 16px;
@@ -225,17 +225,28 @@ span i {
     }
 
     select[name="district"]:focus {
-    outline: none !important;
-    border: 1px solid #fd70af !important; 
-}
+        outline: none !important;
+        border: 1px solid #fd70af !important;
+    }
 
     .checkout-form label {
         display: block;
         width: 100%;
         position: relative;
-        z-index: 999;
+        z-index: 10;
     }
 
+    .checkout-form select option {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        font-size: 16px;
+        
+        
+    }
+    .checkout-form select {
+    position: relative;
+    z-index: 20 !important;
+}
 
     .container-section-cart {
         justify-content: center;
