@@ -22,20 +22,28 @@
 
 }
 
-.container-form {
+.section-form {
+    width: 100%;
+    min-height: 100vh; /* Usa min-height en lugar de height fijo */
     display: flex;
-    align-items: center;
-    text-indent: 5px;
     flex-direction: column;
+    background-color: #ffffff; /* Asegura que el fondo cubra todo */
+}
+.container-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-login {
     flex-direction: column;
     display: flex;
+    width: 90%;
     height: auto;
-    margin: 40px;
+    margin: 20px;
     border: 1px solid #fd70af;
-    width: 400px;
+    max-width: 400px;
     border-radius: 18px;
     background: #fafafa;
     box-shadow: 8px 6px #f8bfd8 ,
